@@ -12,7 +12,7 @@
     $("#result").text(result);
 
     // jQuery user interface logic here.
-    $(document).ready(function()  {
+    $(document).ready(function()  {g
       $("form#leap-year").submit(function(event)  {
         event.preventDefault();
         var year = parseInt($("input#year").val());
