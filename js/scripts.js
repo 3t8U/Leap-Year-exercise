@@ -1,7 +1,3 @@
-$(document).ready(function() {
-  $("#leap-year").submit(function(event) {
-    event.preventDefault();
-
 // business logic
     var leapYear = function(year) {
       if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
@@ -25,13 +21,11 @@ $(document).ready(function() {
         $(".year").text(year);
 
         if (!result)  {
-          $(".not").text("");
+          $(".not").text("not");
         } else {
           $(".not").text("");
         }
 
-        $("result").show();
+        $("#result").show();
       });
     });
-  });
-});
